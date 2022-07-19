@@ -1,0 +1,61 @@
+/* --------------google Fonts---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Web layout design start*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    position: relative;
+    margin: 0 auto; 
+    width: 1331px;
+    padding: 10px;
+    background-color: rgba(128, 125, 125, 0.1);
+}
+/* This is section 1 design */
+
+.player-banner{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    align-items: center;
+    background: #161616;
+}
+.player-description{
+    width: 45%;
+    padding: 1.25em;         /*this is 20 px,*/
+}
+.player-description h1{
+    font-size: 4em;
+    font-weight: 700;
+    color: #ffffff;
+}
+.player-description p{
+    font-size: 1em;
+    color: #fff;
+    
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff2a7e;
+    padding:10px 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color: #fff;
+    transition: transform 0.2s ease-in;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.player-img{
+    width: 45%;
+    padding: 20px 20px 0 20px;
+
+}
+.player-img img{
+    width: 100%;
+}
