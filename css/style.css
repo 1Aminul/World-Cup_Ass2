@@ -133,6 +133,11 @@
 .card-details span .fa-regular{
     margin-right: 10px;
 }
+.tab-view{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
 /* footer design */
 footer{
     width: 1600px;

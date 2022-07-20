@@ -149,6 +149,11 @@
     color: gray;
     text-align: center;
 }
+.tab-view{
+    position: relative;
+    margin: 0 auto;
+    background: green;
+}
  
 /* /* footer design */
 footer{
