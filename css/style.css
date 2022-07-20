@@ -8,10 +8,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    max-width: 1600px;
+}
 .container{
     position: relative;
     margin: 0 auto; 
-    width: 1331px;
+    max-width: 1331px;
     padding: 10px;
     
 }
@@ -19,21 +22,21 @@
 
 .player-banner{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     border-radius: 15px;
     align-items: center;
     background: #161616;
 }
 .player-description{
     width: 45%;
-    padding: 1.25em;         /*this is 20 px,*/
+    padding: 1.25em;        /*this is 20 px,*/
 }
 .player-description h1{
-    font-size: 4em;
+    font-size: 4.37vw;
     font-weight: 700;
     color: #ffffff;
 }
-.player-description p{
+.player-description .short-hand{
     font-size: 1em;
     color: #fff;
     
@@ -58,6 +61,7 @@
 }
 .player-img img{
     width: 100%;
+    height: 100%;
 }
 
 
@@ -92,6 +96,7 @@
     text-decoration: none;
     background-color: #ffffff;
     color: #161616;
+    border-radius: 15px;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -133,8 +138,9 @@
 .card-details span .fa-regular{
     margin-right: 10px;
 }
+/* Tablet View button */
 .tab-view{
-    display: block;
+    display: none;
     text-align: center;
     margin-top: 20px;
 }
@@ -185,4 +191,74 @@ hr{
 }
 .social-icon a:hover{
     color: #ff2a7e;
+}
+
+/* mediq Query for Responsive design */
+@media  screen and (max-width:600px){
+    /* secition 1 design */
+    .container{
+        width: 100%;
+    }
+    .player-banner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .player-description{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        padding: 20px;
+    }
+    .player-description h1{
+        font-size: 9vw;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    .player-description .short-hand{
+        width:100%;
+        font-size: 1em;
+        color: #fff;   
+    }
+    
+    .short-hand p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+    .player-img{
+        width: 100%;
+        padding: 10px 10px 0 10px;
+    }
+
+    /* seciton 2 design */
+
+    .card-banner{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .card-button{
+        width: 312px;
+        height: 312px;
+        background-color:#fff;
+        border-radius: 15px;
+    }
+    .button .btn{
+        border: 1px solid rgb(116, 112, 112,0.4);
+        background-color: #ffffff;
+        color: #161616;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #bg{
+        border:none;
+    }
+    .card{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+    
 }
