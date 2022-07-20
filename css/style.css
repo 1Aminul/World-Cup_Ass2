@@ -194,7 +194,7 @@ hr{
 }
 
 /* mediq Query for Responsive design */
-@media  screen and (max-width:600px){
+@media  screen and (max-width:688px){
     /* secition 1 design */
     .container{
         width: 100%;
@@ -239,6 +239,10 @@ hr{
         align-items: center;
         margin-top: 20px;
     }
+    .card-hero{
+        justify-content: center;
+        
+    }
     .card-button{
         width: 312px;
         height: 312px;
@@ -260,5 +264,16 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
     }
-    
+    footer{
+        width: 100%;
+        padding:50px;
+        background-color: #161616;
+        margin-top: 10%;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .menu a{
+        padding: 30px 0;
+    }
 }
